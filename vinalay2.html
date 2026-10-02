@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+     <meta charset="UTF-8">
+     <title> vinalay rony - ¿Quién es? </title>
+         <style>
+             /* Elimina todos los bordes externos y huecos blancos del navegador */
+             html, body {
+                 margin: 0;
+                 padding: 0;
+                 width: 100%;
+                 min-height: 100vh;
+                 background-color: rgb(230, 165, 225); /* El rosa cubre TODA la pantalla */
+                 font-family: sans-serif;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+
+             /* Cabecera de lado a lado */
+             header {
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 background-color: rgb(244, 108, 224); /* Tono un poco más oscuro para contrastar */
+                 padding: 15px 30px;
+                 box-sizing: border-box;
+             }
+
+
+             .logo-pequeno {
+                 width: 50px;
+                 height: auto;
+                 display: block;
+             }
+
+
+             .barra-navegacion {
+                 display: flex;
+                 gap: 15px;
+                 margin-top: 10px;
+             }
+
+
+             .boton-nav {
+                 text-decoration: none;
+                 color: rgb(0, 0, 0);
+                 background-color: rgb(179, 147, 243);
+                 padding: 8px 16px;
+                 border-radius: 4px;
+                 font-size: 14px;
+                 transition: background-color 0.3s;
+             }
+
+
+             .boton-nav:hover {
+                 background-color: rgb(98, 191, 231);
+                 color: white;
+             }
+
+
+             .boton-nav.activo {
+                 background-color: rgb(214, 71, 250); /* Color estático */
+                 color: white;
+                 font-weight: bold;
+             }
+
+
+             /* Contenedor principal que se estira al ancho completo */
+             main {
+                 display: flex;
+                 gap: 30px;
+                 padding: 30px;
+                 box-sizing: border-box;
+                 flex: 1; /* Empuja el footer hacia abajo */
+                 width: 100%;
+             }
+
+
+             /* Columna del anuncio */
+             aside {
+                 width: 25%;
+                 display: flex;
+                 justify-content: center;
+                 align-items: flex-start;
+             }
+
+
+             aside img {
+                 width: 100%;
+                 max-width: 350px;
+                 height: auto;
+                 display: block;
+                 border-radius: 4px;
+             }
+
+
+             /* Columna de la información */
+             section {
+                 width: 75%;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+
+             article {
+                 width: 100%;
+                 background-color: rgb(142, 133, 153); /* El fondo rosa de tu tarjeta */
+                 padding: 25px;
+                 border-radius: 6px;
+                 box-sizing: border-box;
+             }
+
+
+             article img {
+                 max-width: 100%;
+                 height: auto;
+                 display: block;
+                 margin-bottom: 20px;
+                 border-radius: 4px;
+             }
+
+
+             /* Pie de página de lado a lado */
+             footer {
+                 background-color: rgb(215, 145, 210);
+                 text-align: center;
+                 padding: 15px;
+                 width: 100%;
+                 box-sizing: border-box;
+             }
+
+
+             footer p {
+                 margin: 0;
+                 font-size: 14px;
+             }
+         </style>
+    </head>  
+    <body>
+        <header>
+            <div>
+                <h1 style="margin:0;">Mi sitio web</h1>
+                <nav class="barra-navegacion">
+                    <a href="index.html" class="boton-nav">inicio lana Del Rey</a>
+                    <a href="vinalay2.html"class="boton-nav activo">evolucion de lana del rey</a>
+                    <a href="vinalay3.html" class="boton-nav">donde empezo </a>
+                </nav>
+            </div>
+            <img src="imagenes/portada.jpg" alt="logo de mi sitio web" title="logo de la marca" class="logo-pequeno">
+        </header>
+
+
+        <main>
+            <aside>
+                <img src="imagenes/travis.jpg" alt="anuncios">
+            </aside>
+            <section>
+                <article>
+                    <img src="imagenes/lanarosa.jpeg" alt="foto">
+                    <h1>Lana Del Rey</h1>
+                    <p>Lana del Rey. Se hizo mundialmente famosa en 2011 con el éxito viral de su sencillo «Video Games» y su álbum debut [Born to Die] (2012).La evolución de Lana Del Rey comenzó con sus primeros proyectos bajo nombres como May Jailer y Lizzy Grant. Con el tiempo creó la identidad de Lana Del Rey y alcanzó la fama con “Video Games” y el álbum Born to Die (2012), caracterizados por un estilo cinematográfico, romántico y nostálgico.
+
+En Ultraviolence (2014) adoptó un sonido más oscuro y rockero. Posteriormente, con álbumes como Lust for Life, Norman Fucking Rockwell!, Chemtrails Over the Country Club y Did You Know That There’s a Tunnel Under Ocean Blvd, evolucionó hacia un estilo más íntimo, folk y personal, destacándose cada vez más como compositora.</p>
+            </section>
+        </main>
+
+
+        <footer>
+            <p>Creado por vinalay romina</p>
+        </footer>
+    </body>
+</html>
+
+
